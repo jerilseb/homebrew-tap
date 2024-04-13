@@ -1,4 +1,4 @@
-class Mycli < Formula
+class MyCli < Formula
     desc "My CLI"
     homepage "https://github.com/jerilseb/my-cli"
     url "https://github.com/jerilseb/my-cli/releases/download/v1.0.0/mycli-linux.tar.gz"
