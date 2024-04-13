@@ -5,6 +5,6 @@ class MyCli < Formula
     sha256 "a25c833611457c558b949fd3ffe610fd2afb8574cbb65f2f09295560338e3a45"
 
     def install
-      system "go", "build", "-o", bin/"my-cli"
+        bin.install "my-cli"
     end
   end
