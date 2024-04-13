@@ -5,6 +5,6 @@ class MyCli < Formula
     sha256 "203e153de03778368d610aa530963ed45205a1a0d299f27ff9f6d5f747e3498d"
 
     def install
-        bin.install "my-cli"
+        bin.install "mycli"
     end
   end
