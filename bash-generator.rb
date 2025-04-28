@@ -5,13 +5,13 @@
 class BashGenerator < Formula
   desc "Generate Bash commands by saying what you want"
   homepage "https://github.com/jerilseb/bash-generator"
-  version "1.0.8"
+  version "1.0.9"
   depends_on :linux
 
   on_intel do
     if Hardware::CPU.is_64_bit?
-      url "https://github.com/jerilseb/bash-generator/releases/download/v1.0.8/bash-generator_1.0.8_linux_amd64.tar.gz"
-      sha256 "74c7e118a0dbfeb3e93b4274002cbb4d99bb34f0d1f6e2571a816fc6c1885a6c"
+      url "https://github.com/jerilseb/bash-generator/releases/download/v1.0.9/bash-generator_1.0.9_linux_amd64.tar.gz"
+      sha256 "529036854ab8e2bcbd936627aaa3b21090283f9f7f37488c3374003c1cd667df"
 
       def install
         bin.install "bash-generator"
