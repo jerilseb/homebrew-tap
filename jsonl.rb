@@ -2,19 +2,33 @@
 # frozen_string_literal: true
 
 # Maintained by hand. jsonl is a Rust crate, so unlike the other formulae here
-# there is no GoReleaser pipeline to regenerate this file on release: bump the
-# url and sha256 yourself when tagging a new version.
+# there is no GoReleaser pipeline to regenerate this file: bump the urls and
+# sha256s from the release workflow's job summary when tagging a version.
 class Jsonl < Formula
   desc "Terminal viewer for JSONL (newline-delimited JSON) files"
   homepage "https://github.com/jerilseb/jsonl"
-  url "https://github.com/jerilseb/jsonl/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "f48746ab14be0d4ed3f55a4c009b26b09b2180439f78ed8d8447f6c559258c1f"
-  head "https://github.com/jerilseb/jsonl.git", branch: "main"
 
-  depends_on "rust" => :build
+  on_macos do
+    # Apple silicon only.
+    on_arm do
+      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.0/jsonl_0.1.0_darwin_arm64.tar.gz"
+      sha256 "d511c1f3e9af3fa2d18bf376ef2313fd149084096b5143c0bf8406ba8efec40f"
+    end
+  end
+
+  on_linux do
+    on_intel do
+      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.0/jsonl_0.1.0_linux_amd64.tar.gz"
+      sha256 "f170d53197a0c042d3b30ea5e69a7883e406195c8fc8bb47fefe34545de6e98d"
+    end
+    on_arm do
+      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.0/jsonl_0.1.0_linux_arm64.tar.gz"
+      sha256 "0b9c273567ace24e293411d078e00326eda5ca76b8e8332c6dd5771fc032aebf"
+    end
+  end
 
   def install
-    system "cargo", "install", *std_cargo_args
+    bin.install "jsonl"
   end
 
   test do
