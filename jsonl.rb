@@ -11,19 +11,19 @@ class Jsonl < Formula
   on_macos do
     # Apple silicon only.
     on_arm do
-      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.3/jsonl_0.1.3_darwin_arm64.tar.gz"
-      sha256 "b1f2268ba4d83e4167562893416e1bb1bd854f374b78efd63b9f4e527dc61974"
+      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.4/jsonl_0.1.4_darwin_arm64.tar.gz"
+      sha256 "205728711b6e3514d596de8b696f1ba2c5289897e3444bab98d79672c26e271f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.3/jsonl_0.1.3_linux_amd64.tar.gz"
-      sha256 "794b802653e598b14b88d753f63543b7a94055df54011961cd9de609cf5075bc"
+      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.4/jsonl_0.1.4_linux_amd64.tar.gz"
+      sha256 "9cf5f72199b768b333c3fe126281e97afe1fd945c3fef2852dd09f176478ea3c"
     end
     on_arm do
-      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.3/jsonl_0.1.3_linux_arm64.tar.gz"
-      sha256 "0d746cc68dad995ef9b16ae030eece8d98f1c1187759307351d7bf6fa5f3ecbf"
+      url "https://github.com/jerilseb/jsonl/releases/download/v0.1.4/jsonl_0.1.4_linux_arm64.tar.gz"
+      sha256 "44c03136f07cb64d62944ad7dd8adeeb7e4be282d01bc3ba7fbc385877b13760"
     end
   end
 
