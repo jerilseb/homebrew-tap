@@ -27,7 +27,7 @@ brew install jerilseb/tap/<formula>
 | Formula | Version | Description | Platforms |
 | --- | --- | --- | --- |
 | [`bash-generator`](https://github.com/jerilseb/bash-generator) | 1.0.9 | Generate Bash commands by saying what you want | Linux (x86_64) |
-| [`jsonl`](https://github.com/jerilseb/jsonl) | 0.1.0 | Terminal viewer for JSONL (newline-delimited JSON) files | macOS (Apple silicon), Linux (x86_64, arm64) |
+| [`jsonl`](https://github.com/jerilseb/jsonl) | 0.1.3 | Terminal viewer for JSONL (newline-delimited JSON) files | macOS (Apple silicon), Linux (x86_64, arm64) |
 | [`my-cli`](https://github.com/jerilseb/my-cli) | 1.0.4 | A simple CLI for testing purposes | macOS, Linux (x86_64, arm64) |
 | [`spacer`](https://github.com/jerilseb/spacer) | 1.0.0 | A CLI app for cleaning up large files | macOS, Linux (x86_64, arm64) |
 
