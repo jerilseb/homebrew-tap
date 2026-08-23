@@ -11,19 +11,19 @@ class Dockmate < Formula
   on_macos do
     # Apple silicon only.
     on_arm do
-      url "https://github.com/jerilseb/dockmate/releases/download/v0.1.2/dockmate_0.1.2_darwin_arm64.tar.gz"
-      sha256 "b1e249924dc0ada71ccf108df6b371d8b821a799a7b231a3731b4b58c43fcf81"
+      url "https://github.com/jerilseb/dockmate/releases/download/v0.1.3/dockmate_0.1.3_darwin_arm64.tar.gz"
+      sha256 "81a84c0c2c554c31fc726923beae17edc1c57aadd88e10dc4a1764d50f1e4612"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jerilseb/dockmate/releases/download/v0.1.2/dockmate_0.1.2_linux_amd64.tar.gz"
-      sha256 "5d939277c141888096696c5f63c9197478cc9b63cad21d63cc2676871881f705"
+      url "https://github.com/jerilseb/dockmate/releases/download/v0.1.3/dockmate_0.1.3_linux_amd64.tar.gz"
+      sha256 "c11a9b41f72c37183a6266191e0d266ef186844cda501503ee7130260797be49"
     end
     on_arm do
-      url "https://github.com/jerilseb/dockmate/releases/download/v0.1.2/dockmate_0.1.2_linux_arm64.tar.gz"
-      sha256 "bfc760c42d8e39db11446aaf0e38f674f790cc88a45762464af7f8d0a7134f13"
+      url "https://github.com/jerilseb/dockmate/releases/download/v0.1.3/dockmate_0.1.3_linux_arm64.tar.gz"
+      sha256 "006bddb5f8ace5e6a94ef7d35e9c0686f808175d7135b54188414d3227c594f7"
     end
   end
 
