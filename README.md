@@ -28,6 +28,7 @@ brew install jerilseb/tap/<formula>
 | --- | --- | --- | --- |
 | [`bash-generator`](https://github.com/jerilseb/bash-generator) | 1.0.9 | Generate Bash commands by saying what you want | Linux (x86_64) |
 | [`jsonl`](https://github.com/jerilseb/jsonl) | 0.1.6 | Terminal viewer for JSONL (newline-delimited JSON) files | macOS (Apple silicon), Linux (x86_64, arm64) |
+| [`lakeview`](https://github.com/jerilseb/lakeview) | 0.1.7 | Terminal browser for lakeFS | macOS (Apple silicon), Linux (x86_64, arm64) |
 | [`spacer`](https://github.com/jerilseb/spacer) | 1.0.0 | A CLI app for cleaning up large files | macOS, Linux (x86_64, arm64) |
 
 ### bash-generator
@@ -52,6 +53,19 @@ brew install jerilseb/tap/jsonl
 
 > The Linux builds are statically linked against musl, so they run on any
 > distro regardless of its glibc version. macOS is Apple silicon only.
+
+### lakeview
+
+Browses a [lakeFS](https://lakefs.io) server from the terminal: repositories on
+the left, a tree of one ref's objects in the middle, a live preview on the
+right. Everything is read-only — it never writes to your server.
+
+```sh
+brew install jerilseb/tap/lakeview
+```
+
+> Built the same way as `jsonl`: Linux is statically linked against musl and
+> macOS is Apple silicon only.
 
 ### spacer
 
@@ -79,10 +93,10 @@ brew untap jerilseb/tap   # removes the tap entirely
 
 Most formulae in this tap are generated automatically by [GoReleaser](https://goreleaser.com)
 when a new version of a tool is released, so please don't edit those `.rb` files by
-hand — changes will be overwritten by the next release. `jsonl` is the exception: it
-is a Rust crate with no GoReleaser pipeline, so its formula is maintained by hand.
-Its binaries are built by a GitHub Actions workflow on the release tag, which prints
-the `url`/`sha256` values to paste in as its job summary.
+hand — changes will be overwritten by the next release. `jsonl` and `lakeview` are the
+exceptions: they are Rust crates with no GoReleaser pipeline, so their formulae are
+maintained by hand. Their binaries are built by a GitHub Actions workflow on the
+release tag, which prints the `url`/`sha256` values to paste in as its job summary.
 
 Issues and feature requests belong in each tool's own repository, linked in the
 table above.
