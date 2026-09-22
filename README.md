@@ -27,6 +27,7 @@ brew install jerilseb/tap/<formula>
 | Formula | Version | Description | Platforms |
 | --- | --- | --- | --- |
 | [`bash-generator`](https://github.com/jerilseb/bash-generator) | 1.0.9 | Generate Bash commands by saying what you want | Linux (x86_64) |
+| [`chat-cli`](https://github.com/jerilseb/chat-cli) | 0.1.0 | Chat with OpenAI and Anthropic models from the terminal | macOS (Apple silicon), Linux (x86_64, arm64) |
 | [`jsonl`](https://github.com/jerilseb/jsonl) | 0.1.6 | Terminal viewer for JSONL (newline-delimited JSON) files | macOS (Apple silicon), Linux (x86_64, arm64) |
 | [`lakeview`](https://github.com/jerilseb/lakeview) | 0.1.7 | Terminal browser for lakeFS | macOS (Apple silicon), Linux (x86_64, arm64) |
 | [`spacer`](https://github.com/jerilseb/spacer) | 1.0.0 | A CLI app for cleaning up large files | macOS, Linux (x86_64, arm64) |
@@ -40,6 +41,22 @@ brew install jerilseb/tap/bash-generator
 ```
 
 > Currently ships a Linux x86_64 build only.
+
+### chat-cli
+
+A terminal chat client that speaks three wire formats — OpenAI chat
+completions, OpenAI responses and Anthropic messages — chosen with `-t` and
+pointed anywhere with `-e`, so it works against a local proxy as readily as
+against a vendor. Answers render as markdown, reasoning from thinking models
+gets its own collapsed section, and every response carries a debug panel with
+the raw request and response one click away.
+
+```sh
+brew install jerilseb/tap/chat-cli
+```
+
+> Built the same way as `jsonl`: Linux is statically linked against musl and
+> macOS is Apple silicon only.
 
 ### jsonl
 
@@ -93,9 +110,9 @@ brew untap jerilseb/tap   # removes the tap entirely
 
 Most formulae in this tap are generated automatically by [GoReleaser](https://goreleaser.com)
 when a new version of a tool is released, so please don't edit those `.rb` files by
-hand — changes will be overwritten by the next release. `jsonl` and `lakeview` are the
-exceptions: they are Rust crates with no GoReleaser pipeline, so their formulae are
-maintained by hand. Their binaries are built by a GitHub Actions workflow on the
+hand — changes will be overwritten by the next release. `jsonl`, `lakeview` and
+`chat-cli` are the exceptions: they are Rust crates with no GoReleaser pipeline, so
+their formulae are maintained by hand. Their binaries are built by a GitHub Actions workflow on the
 release tag, which prints the `url`/`sha256` values to paste in as its job summary.
 
 Issues and feature requests belong in each tool's own repository, linked in the
