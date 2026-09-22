@@ -7,25 +7,25 @@
 class ChatCli < Formula
   desc "TUI chat client for OpenAI completions, OpenAI responses and Anthropic messages"
   homepage "https://github.com/jerilseb/chat-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     # Apple silicon only.
     on_arm do
-      url "https://github.com/jerilseb/chat-cli/releases/download/v0.1.0/chat-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "80e7390c5eaa0e96ececd29a3e816fd2fd01a83ee8bd8d04e4461787801792df"
+      url "https://github.com/jerilseb/chat-cli/releases/download/v0.2.0/chat-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "9e3bcf432ee29066d72eb5352d9f3ecd98acf9ee601f8b8ae1435152599ac093"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jerilseb/chat-cli/releases/download/v0.1.0/chat-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "432bf039261d216cca9f88bc9d5d1ca1ae70886a971cf5b8de93d9248b828052"
+      url "https://github.com/jerilseb/chat-cli/releases/download/v0.2.0/chat-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "014ec35882cd75c25655eabdcb4227d3bf2a9d769c7104b03c03e52cab13e528"
     end
     on_arm do
-      url "https://github.com/jerilseb/chat-cli/releases/download/v0.1.0/chat-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "57cde5d34e02abbac1a5b62ce56bb1969fe61e0adf410c10c90de9e469da444f"
+      url "https://github.com/jerilseb/chat-cli/releases/download/v0.2.0/chat-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "a67e6bd30dc286d98cc77e38d75e4e2ba3966bd26dfa7dbeaa416ceb4b73a61c"
     end
   end
 
